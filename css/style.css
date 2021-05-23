@@ -365,13 +365,16 @@ header{
     width: auto !important;
     display: initial !important;
 }
-.sys_sec .owl-prev, .owl-next {
+.sys_sec .owl-prev{
 	/* position: absolute;
 	color: rgb(7, 7, 7) !important;
 	font-size: 120px !important;
 	font-weight: 100 !important; */
   
 	display: none !important;
+}
+.sys_sec .owl-next{
+    display: none !important;
 }
 
 
@@ -415,12 +418,11 @@ header{
 }
 .accordion-button{
     background: none;
-    color: #242f51;
+    color: #242f51 !important;
     font-weight: 600;
     font-size: 20px;
     padding-left: 54px;
 }
-
 .accordion-button:focus {
     z-index: 3;
     border: none;
@@ -436,18 +438,19 @@ header{
 }
 /* ///////////get-app/////////// */
 .get-app{
-    width: 100%;
+    /* width: 100%;
     height: auto;
     background: url(../image/trail-right-image.png);
     background-position: right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    padding: 50px 0 0 0;
     z-index: 9999 !important;
 }
 .dewn-town{
-    height: 66vh;
+    /* height: 66vh;
     display: table-cell;
-    vertical-align: middle;
-    /* padding: 190px 0 150px 0; */
+    vertical-align: middle; */
+    padding: 45px 0 50px 0px;
 }
 .dewn-town h3{
     color: #0e121d;
@@ -457,8 +460,8 @@ header{
 /* ///////////footer /////////*/
 .footer{
     background-color: #141a30;
-    padding: 120px 0 10px 0;
-    margin-top: -75px;
+    padding: 110px 0 10px 0;
+    margin-top: -45px;
     z-index: -9;
 }
 .dating li{
