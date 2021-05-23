@@ -418,7 +418,7 @@ header{
 }
 .accordion-button{
     background: none;
-    color: #242f51 !important;
+    color: #242f51 ;
     font-weight: 600;
     font-size: 20px;
     padding-left: 54px;
