@@ -414,11 +414,7 @@ header{
 .accr{
     width: 79%;
 }
-/* .accordion-button:not(.collapsed) {
-    color: #242f51 ;
-    background-color: #f5f7fa !important;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
-} */
+
 .accordion-button{
     background: none;
     color: #242f51 ;
@@ -461,18 +457,11 @@ header{
 }
 /* ///////////get-app/////////// */
 .get-app{
-    /* width: 100%;
-    height: auto;
-    background: url(../image/trail-right-image.png);
-    background-position: right;
-    background-repeat: no-repeat; */
+   
     padding: 50px 0 0 0;
     z-index: 9999 !important;
 }
 .dewn-town{
-    /* height: 66vh;
-    display: table-cell;
-    vertical-align: middle; */
     padding: 45px 0 50px 0px;
 }
 .dewn-town h3{
