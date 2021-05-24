@@ -36,6 +36,7 @@ header{
     background: url(../image/top-bg.png);
     background-position: center;
     background-repeat: no-repeat;
+    padding: 68px 0;
     background-size: cover;
     /* position: relative; */
 }
@@ -416,12 +417,36 @@ header{
 .accr{
     width: 79%;
 }
+/* .accordion-button:not(.collapsed) {
+    color: #242f51 ;
+    background-color: #f5f7fa !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+} */
 .accordion-button{
     background: none;
     color: #242f51 ;
     font-weight: 600;
     font-size: 20px;
     padding-left: 54px;
+}
+.accordion button[aria-expanded="true"]::before {
+    position: absolute;
+    content: '-';
+    right: 23px;
+    color: #242f51;
+    font-size: 39px;
+}
+.accordion button::before {
+    position: absolute;
+    content: '+';
+    right: 24px;
+    color: #282828;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: #242f51;
 }
 .accordion-button:focus {
     z-index: 3;
@@ -431,6 +456,7 @@ header{
     box-shadow:none; 
     outline: none;
     color: #242f51;
+    background-color: #f5f7fa !important;
 }
 .accordion-item{
     border: none;
