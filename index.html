@@ -90,40 +90,58 @@
    </section>
 
    <!-- top slider section starts here -->
-   <section>
+   <section class="top-sld">
      <div class="container">
-       <div class="row">
-         <div class="col-lg-12 text-center pt-5 pb-5">
-           <h2 class="fs-5">Trusted by companies like</h2>
-         </div>
-       </div>
-       <div class="row">
-         <div class="col-lg-12 text-center">
-          <div class="owl-carousel owl-theme">
-            <div class="item sdr">
-              <img src="image/top-slider.png" alt="">
-              <img src="image/top-slider2.png" alt="">
-              <img src="image/top-slider-3.png" alt="">
-              <img src="image/top-slider4.png" alt="">
-              <img src="image/top-slider5.png" alt="">
+            <div class="row">
+              <div class="col-lg-12 text-center pt-5 pb-5">
+                <h2 class="fs-5">Trusted by companies like</h2>
+              </div>
             </div>
-            <div class="item  sdr">
-              <img src="image/top-slider.png" alt="">
-              <img src="image/top-slider2.png" alt="">
-              <img src="image/top-slider-3.png" alt="">
-              <img src="image/top-slider4.png" alt="">
-              <img src="image/top-slider5.png" alt="">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="owl-carousel owl-theme text-center pt-5">
+                  <div class="item sdr">
+                    <img src="image/top-slider.png" class="img-fluid" alt="">
+                  </div> 
+                  <div class="item sdr">
+                    <img src="image/top-slider2.png" class="img-fluid " alt="">
+                  </div> 
+                  <div class="item sdr">
+                    <img src="image/top-slider-3.png" class="img-fluid" alt="">
+                  </div> 
+                  <div class="item sdr">
+                    <img src="image/top-slider4.png" class="img-fluid" alt="">
+                  </div> 
+                  <div class="item sdr">
+                    <img src="image/top-slider5.png" class="img-fluid" alt="">
+                  </div> 
+                    
+                  </div>
+                <!-- <div class="owl-carousel owl-theme">
+                  <div class="item sdr">
+                    <img src="image/top-slider.png" alt="">
+                    <img src="image/top-slider2.png" alt="">
+                    <img src="image/top-slider-3.png" alt="">
+                    <img src="image/top-slider4.png" alt="">
+                    <img src="image/top-slider5.png" alt="">
+                  </div>
+                  <div class="item  sdr">
+                    <img src="image/top-slider.png" alt="">
+                    <img src="image/top-slider2.png" alt="">
+                    <img src="image/top-slider-3.png" alt="">
+                    <img src="image/top-slider4.png" alt="">
+                    <img src="image/top-slider5.png" alt="">
+                  </div>
+                  <div class="item sdr">
+                    <img src="image/top-slider.png" alt="">
+                    <img src="image/top-slider2.png" alt="">
+                    <img src="image/top-slider-3.png" alt="">
+                    <img src="image/top-slider4.png" alt="">
+                    <img src="image/top-slider5.png" alt="">
+                  </div>
+                </div> -->
+              </div>
             </div>
-            <div class="item sdr">
-              <img src="image/top-slider.png" alt="">
-              <img src="image/top-slider2.png" alt="">
-              <img src="image/top-slider-3.png" alt="">
-              <img src="image/top-slider4.png" alt="">
-              <img src="image/top-slider5.png" alt="">
-            </div>
-          </div>
-         </div>
-       </div>
      </div>
    </section>
 
@@ -665,7 +683,29 @@
    <script src="js/jquery.min.js"></script>
    <script src="js/owl.carousel.js"></script>
    <script>
-              $('.owl-carousel').owlCarousel({
+              $('.top-sld .owl-carousel').owlCarousel({
+              dots:false,
+              loop:true,
+              margin:10,
+              nav:true,
+              autoplay:true,
+              smartSpeed:500,
+              autoplayTimeout:3000,
+              autoplayHoverPause:true,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  600:{
+                      items:1
+                  },
+                  1000:{
+                      items:5
+                  }
+              }
+          })
+
+          $('.testimonial .owl-carousel').owlCarousel({
               dots:false,
               loop:true,
               margin:10,
